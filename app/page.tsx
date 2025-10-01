@@ -1,11 +1,14 @@
 "use client";
 
 import { Inter } from "@next/font/google";
-import { useState } from "react";
+import { useCompanies } from "../hooks/useCompanies";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [state, setState] = useState<any>([]);
+  const { companies, loading, error } = useCompanies();
+
+  console.log({ ...companies });
 
   return (
     <main>
