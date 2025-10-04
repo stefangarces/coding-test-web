@@ -12,10 +12,133 @@ body {
 
 body {
   color: #333;
-  background: #f1f1f1;
+  background: #FFF;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.company-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.5rem;
+  color: #999;
+}
+
+.hover-push {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hover-push:hover {
+  transform: translate(3px, -3px);
+}
+
+.company-logo-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.main {
+  padding: 5rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 5rem 0 0 0;
+    width: 100%;
+  }
+}
+
+.h1-quartr-title {
+margin-bottom: 1rem;
+}
+
+.trending-title {
+color: #999;
+margin-bottom: 1rem;
+}
+
+.company-logo-background {
+  padding: 2.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.company-info-container {
+  padding: 5rem;
+  max-width: 90%;
+}
+
+.company-back-button {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.company-name {
+  margin-bottom: 1rem;
+}
+
+.logo-container {
+  padding: 2.5rem;
+  margin-top: 1rem;
+  width: 170px;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 150px;
+  height: auto;
+}
+
+.spacing {
+  margin-bottom: 2rem;
+}
+
+.info-section {
+  margin-bottom: 1rem;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.events-section {
+  margin-top: 2rem;
+}
+
+.event-card {
+  margin-bottom: 1rem;
+}
+
+.external-link {
+  gap: 0.25rem;
 }

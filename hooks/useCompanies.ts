@@ -24,10 +24,7 @@ export const useCompanies = (): any => {
       setError(errorMessage);
       console.error('Error fetching companies:', err);
     } finally {
-      // only for testing loading state
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
+      setLoading(false);
     }
   };
 
